@@ -3,7 +3,6 @@ permalink: /license/
 layout: default
 title: MIT License
 description: This theme is licensed under the MIT License.
-exclude: true
 ---
 The MIT License (MIT)
 Copyright (c) 2016 Ron Dyar
