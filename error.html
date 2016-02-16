@@ -9,11 +9,7 @@ exclude: true
   <h1 class="pad-top">Error - 404! Looks like the page you are looking for does not exist!</h1>
   <p >Below is a list of pages that <em>do exist</em> maybe one of these is what you are looking for? </p>
   <ul class="sitemap">
-    <li style="margin-bottom:20px;"><a href="/">Strapless Home Page</a> <br />
-     Strapless is a simple CSS starting point for web sites that doesn't rely on any framework or JS/Jquery.<br /></li>
-     {% for page in site.pages %}
-     {% if page.exclude != true %}
-     <li style="margin-bottom:20px;"><a href="{{ page.url }}">{{ page.title }}</a> <br />{{ page.description }}<br /></li>{% endif %}
+       {% for page in site.pages %}{% if page.exclude != true %}<li style="margin-bottom:20px;"><a href="{{ page.url }}">{{ page.title }}</a> <br />{{ page.description }}<br /></li>{% endif %}
      {%endfor%}
    </ul>
  </div>
