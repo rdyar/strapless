@@ -5,7 +5,7 @@ title: Random Notes
 description: random notes about the Strapless CSS
 ---
 {% for note in site.notes %}
-  <a href="{{site.baseurl}}{{note.url}}"><h2>{{ note.title }}</h2></a>
+  <h2>{{ note.title }}</h2>
   <hr>
   <p>{{note.content}}</p>
 {% endfor %}  

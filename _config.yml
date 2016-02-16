@@ -1,4 +1,4 @@
-name: "Strapless CSS Starting Point"
+name: "Strapless CSS"
 baseurl: /strapless
 # url: 
 permalink: pretty
@@ -13,7 +13,7 @@ kramdown:
 
 collections:
   notes:
-    output: true  
+    output: false  
 
 defaults:
   -

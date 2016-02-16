@@ -3,7 +3,6 @@ permalink: /elements/
 layout: raw
 title: Elements
 description: List of elements and their styles
-exclude: true
 ---
 {% include breadcrumb.html %}
 <section class="section-main">
