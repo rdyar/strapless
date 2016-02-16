@@ -1,0 +1,65 @@
+/*flexbox on home page for services*/
+.service-flexrow{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+}
+.service-flexitem{
+  width: 500px;
+  background-color: #fafafa;
+  border: 1px solid #f3f3f3;
+  border-radius:2px;
+  box-shadow: 0 0 4px rgba(232, 232, 232, 0.74);
+}    
+.sf-white-bg{
+  background-color: #FFFFFF;
+}
+.service-list{
+  width:100%; 
+  border-bottom:1px solid #e2e2e2;
+  margin:0 6px;
+}
+@media (min-width: 768px) {
+  .service-flexitem {
+    width:340px;
+  }
+}
+@media (min-width: 992px) {
+ .service-flexitem {
+    width: 310px;
+     }
+}
+@media (min-width: 1200px) {
+ .service-flexitem {
+      width: 370px;
+  }
+}
+.servicea:hover {
+    text-decoration: none;
+}
+.service-box{
+    border:1px solid #e2e2e2;
+    background-color:white;
+    margin-bottom:10px;
+    border-radius:2px;
+    }
+.service-text{
+  padding:20px 6px 10px 6px;
+  text-align: center;
+  border-top: 1px solid #efefef;
+}  
+.serviceh2{
+    margin-bottom: 0.2rem;
+    margin-top: .5rem;
+}
+ .service-flexitem .img-responsive{
+  padding-bottom: 0;
+}

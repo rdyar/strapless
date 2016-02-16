@@ -1,0 +1,13 @@
+<section class="section-breadcrumb">
+  <div class="container">
+           <h1>{{ page.title }}</h1>
+           <p class="lead-crumb">
+           {% if page.url == '/contact/' %} ProLabPrints.com and Fromex Photo Lab, Inc. are located in San Diego, California. <a class="hidden-desktop no-border" href="tel:+1-619-287-5346">(619) 287-5346.</a>
+           {% elsif page.url == '/gallery/' %}
+           Sometimes the things we do don't translate well to a set list of services and prices so we try to document some of the other aspects of what we do here on our Gallery page and via our <a href="https://www.instagram.com/prolabprints/">Instagram account - prolabprints</a>.
+           {% else %}
+           {{page.description}}
+           {% endif %}
+           </p>
+        </div>
+</section>

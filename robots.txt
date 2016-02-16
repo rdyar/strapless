@@ -1,0 +1,18 @@
+﻿User-Agent: *
+Disallow: /error.html
+Allow: /
+#
+User-agent: Slurp
+Disallow: /
+#
+# Yahoo Pipes is for feeds not web pages.
+#
+User-agent: Yahoo Pipes 1.0
+Disallow: /
+#
+# disallow adsense bot
+#
+User-agent: Mediapartners-Google
+Disallow: /
+
+Sitemap: http://rdyar.github.io/strapless/sitemap.xml

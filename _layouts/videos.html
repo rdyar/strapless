@@ -1,0 +1,26 @@
+{% include header.html %}
+<main class="site-content">
+{% include breadcrumb.html %}
+<section class="section-main">
+  <div class="container">
+			<p class="bold">Posted on {{ page.posted-on }}</p>
+            <p>{{ page.description }}</p>
+            <p>{{ page.additional-info}}</p>
+			<hr />
+                            <div class="responsive-video margin-bottom-30">
+                                 <iframe width="940" height="480" src="//www.youtube.com/embed/{{page.youtube-url}}?modestbranding=1;autohide=1&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+            <h4 class="pad-top">Additional Videos Tutorials</h4>
+     <hr/>
+     {% assign items = site.videos | sort: 'sortnum' %}
+     {% for vid in items %}
+     {% if page.url != vid.url %}
+      <h3 class="vid-title"><a href="{{vid.url}}">{{ vid.title }}</a></h3>
+      <p>{{vid.description}}</p>
+      {% endif %}
+     {% endfor%}                
+    </div>
+</section>      
+</main>  
+{% include footer.html %}

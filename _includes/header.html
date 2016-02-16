@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}Strapless - a simple CSS starting point.{% endif %}</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{page.description | xml_escape}}">
+    <link rel="canonical" href="http://rdyar.github.io/{{site.baseurl}}{{ page.url | replace:'index.html',''}}" />
+    <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/site.css">   
+</head>
+<body class="site">
+    <header class="site-header">
+    <nav>
+    <div class="sticky-nav">
+    <div class="container-nav">
+       <div class="nav-container">
+         <div class="navbar-brand"> <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/strapless-logo.png" alt="Strapless Logo"></a> </div>
+         <div class="navbar-nav nav-mobile">
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/elements/">Elements</a>
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/notes/">Notes</a>
+         </div>
+         <div class="navbar-nav nav-main">
+            <a class="nav-item nav-link{% if page.active %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link{% if page.url == '/elements/' %} active{% endif %}" href="{{site.baseurl}}/elements/">Elements</a>
+            <a class="nav-item nav-link{% if page.url == '/notes/' %} active{% endif %}" href="{{site.baseurl}}/notes/">Notes</a>
+            <a class="nav-item nav-link{% if page.url == '/view-css/' %} active{% endif %}" href="{{site.baseurl}}/view-css/">View the CSS</a>
+         </div>
+      </div>  
+      </div>
+      </div>
+</nav>
+</header>

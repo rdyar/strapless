@@ -1,0 +1,11 @@
+---
+permalink: /notes/
+layout: default
+title: Random Notes
+description: random notes about the Strapless CSS
+---
+{% for note in site.notes %}
+  <a href="{{site.baseurl}}{{note.url}}"><h2>{{ note.title }}</h2></a>
+  <hr>
+  <p>{{note.content}}</p>
+{% endfor %}  

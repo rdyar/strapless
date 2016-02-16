@@ -1,0 +1,45 @@
+/*table styles*/
+.table-bordered {
+    border:$alt-background-border;
+}
+.table {
+    width: 100%;
+    margin: 20px 0;
+    -moz-box-shadow: 0 0 10px #e8e8e8;
+    -webkit-box-shadow: 0 0 10px #e8e8e8;
+    box-shadow: 0 0 10px #e8e8e8;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+    border: $alt-background-border;
+}
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: $alt-background-color;
+}
+.table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: $alt-background-border;
+}
+.table td, th {
+    text-align: center;
+}
+th {
+   background-color: $alt-background-color;
+       padding: 8px;
+       font-weight: normal;
+}
+@media (max-width: 767px){
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
+@media (max-width: 767px){
+.table-responsive>.table>thead>tr>th, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tfoot>tr>td {
+    white-space: nowrap;
+}}

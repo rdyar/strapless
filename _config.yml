@@ -1,0 +1,24 @@
+name: "Strapless CSS Starting Point"
+baseurl: /strapless
+# url: 
+permalink: pretty
+# exclude: 
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+collections:
+  notes:
+    output: true  
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "default"
