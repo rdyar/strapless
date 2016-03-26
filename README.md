@@ -1,3 +1,5 @@
+#Strapless Theme
+
 Strapless is a simple CSS based theme with no JS, JQuery or Frameworks to rely on.
 
 Demo site: http://rdyar.github.io/strapless/
