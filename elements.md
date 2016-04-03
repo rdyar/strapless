@@ -69,7 +69,7 @@ description: List of elements and their styles
 
    <div class="column-33 ">
   <div class="gray-box"><h3>Pro Lab Prints</h3>
-   <p>Looking for an <a href="http://prolabprints.com">AWESOME Pro Lab</a> to print your photos? Check out the inspiration for this theme - <a href="http://prolabprints.com">ProLabPrints.com</a>.</p>
+   <p>Looking for an <a href="https://prolabprints.com">AWESOME Pro Lab</a> to print your photos? Check out the inspiration for this theme - <a href="https://prolabprints.com">ProLabPrints.com</a>.</p>
   </div>
   </div>
 </div>
