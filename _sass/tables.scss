@@ -39,7 +39,8 @@ th {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 }
-@media (max-width: 767px){
-.table-responsive>.table>thead>tr>th, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tfoot>tr>td {
-    white-space: nowrap;
-}}
+//not sure why this is here, works better without it - the table will try to compress as much as possible, then scroll.
+// @media (max-width: 767px){
+// .table-responsive>.table>thead>tr>th, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tfoot>tr>td {
+//     white-space: nowrap;
+// }}
