@@ -96,16 +96,22 @@ margin:4px 8px 14px 8px;
 }
 @media (min-width: 768px) {
  .column-50, .column-33 {
-    width: 344px;
+    width: 356px;
      }
+      .column-50:nth-of-type(odd) {
+        margin:4px 12px 14px 0;
+   }
+     .column-50:nth-of-type(even) {
+            margin:4px 0 14px 12px;
+}     
      .column-66{
         width:344px;
      }
 }
 @media (min-width: 992px) {
  .column-50 {
-    width: 470px;
-     }
+    width: 472px;}
+  
      .column-33{
         width: 300px;
      }
@@ -115,7 +121,7 @@ margin:4px 8px 14px 8px;
 }
 @media (min-width: 1200px) {
  .column-50 {
-    width: 564px;
+    width: 566px;
       }
      .column-33{
         width: 368px;
