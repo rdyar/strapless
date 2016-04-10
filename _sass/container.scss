@@ -110,6 +110,12 @@ margin:4px 8px 14px 8px;
      }
 }
 @media (min-width: 992px) {
+   .column-33:nth-of-type(odd) {
+        margin:4px 8px 14px 8px;
+   }
+   .column-33:nth-of-type(even) {
+        margin:4px 8px 14px 8px;
+}     
  .column-50 {
     width: 477px;}
   
