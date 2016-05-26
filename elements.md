@@ -10,7 +10,7 @@ description: List of elements and their styles
 <h2>Layout and Columns</h2>
   <div class="gray-box margin-bottom">
   <h3>One Column</h3>
-  <p>this is a single column. This is the default, and is just the result of using the <code>container</code> class. No <code>row</code> class needed. <a target="_blank" href="roes://70glossy/70glossysubcat/8x10glossy">link to gloss</a></p></div>
+  <p>this is a single column. This is the default, and is just the result of using the <code>container</code> class. No <code>row</code> class needed.</p></div>
   <div class="row-container">
   <div class="column-50">
   <div class="gray-box">
