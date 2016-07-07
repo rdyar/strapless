@@ -1,0 +1,24 @@
+.sidebar{
+    z-index: 904;
+    width:280px;
+    padding:1rem;
+    color: #c0bbb7;
+    background: #3a3633;
+    border-bottom: 1px solid #505050;
+    border-right: 1px solid #505050;
+     -webkit-flex: 1;
+    flex: 1;
+
+    a{color:#dcd6c1;}
+    h3{color: #a2bade;}
+    p{padding-left:8px;}
+}
+.not-sidebar{
+    padding: 2rem 3rem;
+ }
+.sidebar-flex {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;  
+}
+.main-flex{display:flex; background-color: #f9f9f9;}
