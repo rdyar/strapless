@@ -123,4 +123,9 @@ it is in a media query cause on small screens the nav is not fixed at the top*/
   visibility: hidden; 
 }
 }
+@media (min-width: 768px){
+[id*="markdown-toc"]:before {
+    display: none;
+    // fixes id style that make anchors work with fixed header
+}}
 li {margin-bottom: 8px;}
