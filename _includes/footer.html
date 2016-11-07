@@ -31,9 +31,9 @@
 <!-- footer copyright -->
 <div class="copyright">
       <div class="container">        
-        <p class="copyright-text">
-           {{ site.time | date: '%Y' }} {{ site.name }} 
-        </p>
+        <span class="copyright-text">
+           &copy; {{ site.time | date: '%Y' }} {{ site.name }} {% if site.show_footer_credit %} <span class="strapless-credit"> | <a href="https://github.com/rdyar/strapless/tree/gh-pages" target="_blank">Strapless Theme</a></span>{% endif %}
+        </span>
       </div> 
 </div>
 <!-- end footer copyright --> 

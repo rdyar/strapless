@@ -2,13 +2,13 @@
 name: "Strapless CSS"
 title: Strapless - a simple CSS starting point.
 description: Strapless is a simple CSS starting point for websites. It does not rely on any framework or JS, just plain old CSS.
-baseurl: /strapless
+#baseurl: /strapless
 
 gems:
   - octopress-autoprefixer
 
 permalink: pretty
-exclude: [package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
+exclude: ["Gemfile.lock","Gemfile","package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -74,8 +74,8 @@ ef_links:
     url: /notes/
   - title: "View the CSS"
     url: /view-css/
-  - title: Site Map
-    url: /site-map/
+  - title: XML Site Map
+    url: /sitemap.xml
   - title: MIT License
     url: /license/
   - title: View on GitHub
@@ -89,3 +89,6 @@ ef_contact:
           Anytown, CA 92115 <br />
           Hours: Monday - Friday 11am-11:30am<br />
           Phone: (111) 222-4455<br />
+
+# shows link to strapless on GH
+show_footer_credit: true          

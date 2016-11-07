@@ -1,4 +1,5 @@
 ---
+permalink: /sticky-footer/
 layout: default
 title: Flexbox Sticky Footer
 description: This pages has a sticky footer thanks to flexbox.

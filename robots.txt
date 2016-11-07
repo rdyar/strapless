@@ -1,4 +1,9 @@
-﻿User-Agent: *
+﻿---
+layout: null
+exclude: true
+permalink: robots.txt
+---
+User-Agent: *
 Disallow: /error.html
 Allow: /
 #
@@ -15,4 +20,4 @@ Disallow: /
 User-agent: Mediapartners-Google
 Disallow: /
 
-Sitemap: http://rdyar.github.io/strapless/sitemap.xml
+Sitemap: {{site.canonical_domain}}{{site.baseurl}}/sitemap.xml
