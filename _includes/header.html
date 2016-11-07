@@ -1,11 +1,11 @@
 <!DOCTYPE html>
  <html lang="en"> 
 <head>
-    <title>{% if page.title %}{{ page.title }}{% else %}Strapless - a simple CSS starting point.{% endif %}</title>  
+    <title>{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}</title>  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{page.description | xml_escape}}">
-    <link rel="canonical" href="http://rdyar.github.io/{{site.baseurl}}{{ page.url | replace:'index.html',''}}" />
+    <meta name="description" content="{% if page.description %}{{page.description | xml_escape}}{% else %}{{site.description}}{% endif %}">
+    {% if site.canonical_domain %}<link rel="canonical" href="{{site.canonical_domain}}{{site.baseurl}}{{ page.url | replace:'index.html',''}}" />{% endif %}
     <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/site.css">   
@@ -16,17 +16,17 @@
     <div class="sticky-nav">
     <div class="container-nav">
        <div class="nav-container">
-         <div class="navbar-brand"> <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/strapless-logo.png" alt="Strapless Logo"></a> </div>
+         <div class="navbar-brand"> <a href="{{site.baseurl}}/">  {% if site.logo_url %}<img src="{{site.baseurl}}{{ site.logo_url }}" alt="{{site.name}}">{% elsif site.logo_text %}<h1 class="logo-text">{{site.logo_text}}</h1>{% endif %}</a> </div>
          <div class="navbar-nav nav-mobile">
-            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/">Home</a>
-            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/elements/">Elements</a>
-            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/notes/">Notes</a>
+          {% for link in site.mobile_nav %}
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}          
          </div>
          <div class="navbar-nav nav-main">
-            <a class="nav-item nav-link{% if page.active %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
-            <a class="nav-item nav-link{% if page.url == '/elements/' %} active{% endif %}" href="{{site.baseurl}}/elements/">Elements</a>
-            <a class="nav-item nav-link{% if page.url == '/notes/' %} active{% endif %}" href="{{site.baseurl}}/notes/">Notes</a>
-            <a class="nav-item nav-link{% if page.url == '/view-css/' %} active{% endif %}" href="{{site.baseurl}}/view-css/">View the CSS</a>
+           <a class="nav-item nav-link{% if page.active %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
+          {% for link in site.main_nav %}
+           <a href="{{ site.baseurl }}{{ link.url }}" class="nav-item nav-link{% if page.url == link.url %} active{% endif %}">{{ link.title }}</a>
+          {% endfor %}          
          </div>
       </div>  
       </div>

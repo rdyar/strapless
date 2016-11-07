@@ -1,24 +1,91 @@
+# name is used for the logo image alt text, and in the footer copyright
 name: "Strapless CSS"
+title: Strapless - a simple CSS starting point.
+description: Strapless is a simple CSS starting point for websites. It does not rely on any framework or JS, just plain old CSS.
 baseurl: /strapless
-# url: 
+
+gems:
+  - octopress-autoprefixer
+
 permalink: pretty
-# exclude: 
+exclude: [package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
 highlighter: rouge
 markdown: kramdown
-
 kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
 
-collections:
-  notes:
-    output: false  
+# image for logo, if you don't have one comment it out and use the logo_text below.
+logo_url: /assets/images/strapless-logo.png
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "notes"
-    values:
-      layout: "default"
+# if no logo, comment out above and enter the name and it will show instead
+# if the logo_url above is used this will not display
+logo_text: Strapless CSS
+
+# Main nav is for screens wider than 600px
+# Home link is hard coded by default
+main_nav:
+  - title: "Elements"
+    url: /elements/
+  - title: "Notes"
+    url: /notes/
+  - title: "View the CSS"
+    url: /view-css/   
+
+# on screens smaller than 600px, what nav do you want to show?
+# Home is not set by default, the logo works as home link so it could be skipped.
+# mobile nav is shown as buttons, there is room for 3-5 depending on how long they are.
+mobile_nav:
+  - title: Home
+    url: /
+  - title: "Elements"
+    url: /elements/
+  - title: "Notes"
+    url: /notes/
+
+# cannonical_domain is a link= relative in the head of every page
+# do not include the baser_url if any as it is added in when building the link.
+# not sure what the canonical setting is for, leave it empty or comment it out and it won't be used. 
+# what is the url google will find the main site at? 
+canonical_domain: http://rdyar.github.io
+
+# Expander footer - this has 3 sections, about, links and contact info.
+# if you don't need the expanded footer info change this to false.
+expanded_footer: true
+
+# expanded footer about section. If you have a large site myou should probably hard code these in the footer include.
+# the title is wrapped in an h2 tag
+# the content part is wrapped in a p tag. It is ok to have html in it, just be aware of the already included p tag
+# important! - you cannot use site.base_url or any other site variables in the content! notice I have hard coded my base_url
+ef_about:
+  heading: Strapless CSS
+  content: >
+        A simple CSS Starting point</p>
+        <p>No complex framework, no Javascript or Jquery.</p>
+        <p>Uses Flexbox for a <a href="/strapless/sticky-footer/">sticky footer</a> and 2 and 3 column layouts.
+# Links section - if they are relative then use url, if they are absolute (different domain) use absolute_url
+ef_links:
+  heading: Links
+  links:
+  - title: "Elements"
+    url: /elements/
+  - title: "Notes"
+    url: /notes/
+  - title: "View the CSS"
+    url: /view-css/
+  - title: Site Map
+    url: /site-map/
+  - title: MIT License
+    url: /license/
+  - title: View on GitHub
+    absolute_url: https://github.com/rdyar/strapless/tree/gh-pages
+
+ef_contact:
+  heading: Contact Info
+  content: >
+          Strapless CSS<br />
+          123 Main Street <br />
+          Anytown, CA 92115 <br />
+          Hours: Monday - Friday 11am-11:30am<br />
+          Phone: (111) 222-4455<br />

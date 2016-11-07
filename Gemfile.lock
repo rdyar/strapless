@@ -1,0 +1,52 @@
+GEM
+  specs:
+    addressable (2.4.0)
+    autoprefixer-rails (6.2.2)
+      execjs
+      json
+    colorator (1.1.0)
+    execjs (2.6.0)
+    ffi (1.9.10-x86-mingw32)
+    forwardable-extended (2.6.0)
+    jekyll (3.3.0)
+      addressable (~> 2.4)
+      colorator (~> 1.0)
+      jekyll-sass-converter (~> 1.0)
+      jekyll-watch (~> 1.1)
+      kramdown (~> 1.3)
+      liquid (~> 3.0)
+      mercenary (~> 0.3.3)
+      pathutil (~> 0.9)
+      rouge (~> 1.7)
+      safe_yaml (~> 1.0)
+    jekyll-sass-converter (1.4.0)
+      sass (~> 3.4)
+    jekyll-watch (1.5.0)
+      listen (~> 3.0, < 3.1)
+    json (1.8.3)
+    kramdown (1.9.0)
+    liquid (3.0.6)
+    listen (3.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    mercenary (0.3.5)
+    octopress-autoprefixer (2.0.0)
+      autoprefixer-rails
+      jekyll (~> 3.0)
+    pathutil (0.14.0)
+      forwardable-extended (~> 2.6)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
+    rouge (1.10.1)
+    safe_yaml (1.0.4)
+    sass (3.4.20)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  octopress-autoprefixer
+
+BUNDLED WITH
+   1.13.6

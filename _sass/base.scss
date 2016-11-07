@@ -3,10 +3,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /*strapless css by Ron Dyar | MIT License | https://github.com/rdyar/strapless/tree/gh-pages*/
+.autoprefixer-test{display:flex;}
 html {
-  font-family: $main_font_family;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  font-family: $main_font_family;}
 body {
   padding-top: 5.3rem;
   margin: 0;  

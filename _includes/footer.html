@@ -1,39 +1,33 @@
 <footer class="site-footer">
+<!-- expanded_footer -->
+{% if site.expanded_footer %}
 <div class="footer">
         <div class="container flex-footer">      
                 <div class="f-about f-item">
-                   <h2>Strapless CSS</h2>
-                  <p>A simple CSS starting point.</p>
-                  <p>No complex framework, no Javascript or Jquery.</p>
-                  <p>Uses Flexbox for a <a href="{{site.baseurl}}/sticky-footer/">sticky footer</a> and 2 and 3 column layouts.</p>
-                 </div>
+                  <h2>{{site.ef_about.heading}}</h2>
+                  <p>{{site.ef_about.content}}</p>
+                </div>
                                  
                <div class="f-links f-item">
-               <h2>Links</h2>
+               <h2>{{site.ef_links.heading}}</h2>
               <ul class="footer-links">
-               <li><a href="{{site.baseurl}}/elements/">Elements</a></li>
-               <li><a href="{{site.baseurl}}/notes/">Notes</a></li>             
-               <li><a href="{{site.baseurl}}/view-css/">View the CSS</a></li>
-               <li><a href="{{site.baseurl}}/site-map/">Site Map</a></li>
-               <li><a href="{{site.baseurl}}/license/">MIT License</a></li>
-               <li><a href="https://github.com/rdyar/strapless/tree/gh-pages">GitHub</a></li>
+               {% for link in site.ef_links.links %}
+                <li><a href="{% if link.url %}{{site.baseurl}}{{ link.url }}{% elsif link.absolute_url %}{{link.absolute_url}}{% endif %}">{{ link.title }}</a></li>
+               {% endfor %}        
+              
               </ul>
                </div>
                 <div class="f-contact f-item">
                     <!-- Contact Us -->
-                    <h2>Contact Us</h2> 
-                    <address class="footer-address">
-                        Strapless CSS<br />
-                        123 Main Street <br />
-                        Anytown, CA 92115 <br />
-                        Hours: Monday - Friday 11am-11:30am<br />
-                        Phone: (111) 222-4455<br />
-                    </address>
+                    <h2>{{site.ef_contact.heading}}</h2> 
+                    <address class="footer-address">{{site.ef_contact.content}}</address>
           
                 </div>
            
   </div> 
 </div>
+{% endif %}
+<!-- expanded_footer end -->
 <!-- footer copyright -->
 <div class="copyright">
       <div class="container">        

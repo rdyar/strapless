@@ -112,6 +112,12 @@
         display:none !important;
     }
 }
+@media (max-width: 599px){
+    .navbar-brand {
+    width: 100%;
+    text-align: center;}
+}
 a.active  {
     color: $nav-desktop-color;}
-.navbar-brand a { border-bottom: none; }    
+.navbar-brand a { border-bottom: none; }  
+.logo-text {padding-top:5px;font-size: 1.6rem;}  
