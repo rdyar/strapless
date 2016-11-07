@@ -2,7 +2,8 @@
 name: "Strapless CSS"
 title: Strapless - a simple CSS starting point.
 description: Strapless is a simple CSS starting point for websites. It does not rely on any framework or JS, just plain old CSS.
-baseurl: /strapless
+# baseurl is used if you are using github pages for a project page - this is the project/repo name, always starts with a /
+baseurl: /strapless 
 
 gems:
   - octopress-autoprefixer
