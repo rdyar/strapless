@@ -12,7 +12,7 @@
                <h2>{{site.ef_links.heading}}</h2>
               <ul class="footer-links">
                {% for link in site.ef_links.links %}
-                <li><a href="{% if link.url %}{{site.baseurl}}{{ link.url }}{% elsif link.absolute_url %}{{link.absolute_url}}{% endif %}">{{ link.title }}</a></li>
+                <li><a href="{% if link.url %}{{site.baseurl}}{{ link.url }}{% elsif link.external_url %}{{link.absolute_url}}{% endif %}">{{ link.title }}</a></li>
                {% endfor %}        
               
               </ul>
