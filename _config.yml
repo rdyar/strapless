@@ -3,12 +3,15 @@ name: "Strapless CSS"
 title: Strapless - a simple CSS starting point.
 description: Strapless is a simple CSS starting point for websites. It does not rely on any framework or JS, just plain old CSS.
 <<<<<<< HEAD
+<<<<<<< HEAD
 # url for your domain - without baseurl if any.
 url: http://rdyar.github.io/
 # baseurl is used if you are using github/gitlab pages for a project page - this is the project/repo name, always starts with a /
 baseurl: /strapless 
 # url + baseurl is where your index.html file is - the 2 are combined in various places to form the full url.
 =======
+=======
+>>>>>>> parent of a124152... config baseurl info
 baseurl: /strapless
 
 >>>>>>> parent of a124152... config baseurl info
