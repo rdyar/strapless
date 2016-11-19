@@ -2,19 +2,9 @@
 name: "Strapless CSS"
 title: Strapless - a simple CSS starting point.
 description: Strapless is a simple CSS starting point for websites. It does not rely on any framework or JS, just plain old CSS.
-<<<<<<< HEAD
-<<<<<<< HEAD
-# url for your domain - without baseurl if any.
-url: http://rdyar.github.io/
-# baseurl is used if you are using github/gitlab pages for a project page - this is the project/repo name, always starts with a /
+# baseurl is used if you are using github pages for a project page - this is the project/repo name, always starts with a /
 baseurl: /strapless 
-# url + baseurl is where your index.html file is - the 2 are combined in various places to form the full url.
-=======
-=======
->>>>>>> parent of a124152... config baseurl info
-baseurl: /strapless
 
->>>>>>> parent of a124152... config baseurl info
 gems:
   - octopress-autoprefixer
 
@@ -26,6 +16,13 @@ kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
+
+# cannonical_domain is used for building the full url to your site including the domain and base_url if any.
+# it is used in the sitemap.xml, robots.txt and in the head of every page as a link rel="canonical" tag.
+# do not include the baser_url if any as it is added in when building the link.
+# DO NOT leave it empty or comment it out! or your sitemap and robots files will be incorrect. 
+# what is the url google will find the main site at - not including base_url if any? 
+canonical_domain: http://rdyar.github.io
 
 # image for logo, if you don't have one comment it out and use the logo_text below.
 logo_url: /assets/images/strapless-logo.png
@@ -54,6 +51,12 @@ mobile_nav:
     url: /elements/
   - title: "Notes"
     url: /notes/
+
+# cannonical_domain is a link= relative in the head of every page
+# do not include the baser_url if any as it is added in when building the link.
+# not sure what the canonical setting is for, leave it empty or comment it out and it won't be used. 
+# what is the url google will find the main site at? 
+canonical_domain: http://rdyar.github.io
 
 # Expander footer - this has 3 sections, about, links and contact info.
 # if you don't need the expanded footer info change this to false.
@@ -94,6 +97,5 @@ ef_contact:
           Anytown, CA 92115 <br />
           Hours: Monday - Friday 11am-11:30am<br />
           Phone: (111) 222-4455<br />
-
 # shows link to strapless on GH
-show_footer_credit: true          
+show_footer_credit: true

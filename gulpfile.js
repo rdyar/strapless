@@ -8,10 +8,11 @@ var messages = {
 
 /**
  * Build the Jekyll Site
+ * notice the two config files - the second one over rides the baseurl in the main one so that you can work locally without changing it.
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
+    return cp.spawn('jekyll.bat', ['build','--config','_config.yml,_configlocal.yml'], {stdio: 'inherit'})
         .on('close', done);
 });
 

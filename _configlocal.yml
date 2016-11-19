@@ -1,0 +1,3 @@
+# all this does is override the baseurl for local development so you don't have to change it.
+# this works with the gulp file as it is loads this config file after the main one, and this over rides it.
+baseurl: ""
