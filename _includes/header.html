@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% if page.description %}{{page.description | xml_escape}}{% else %}{{site.description}}{% endif %}">
-    {% if site.canonical_domain %}<link rel="canonical" href="{{site.canonical_domain}}{{site.baseurl}}{{ page.url | replace:'index.html',''}}" />{% endif %}
-    <link rel="shortcut icon" href="{{site.baseurl}}/assets/images/favicon.ico">
+    <link rel="canonical" href="{{ page.url | absolute_url| replace:'index.html',''}}" />{% endif %}
+    <link rel="shortcut icon" href="{{/assets/images/favicon.ico | absolute_url}}">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/site.css">   
+    <link rel="stylesheet" href="{{/assets/css/site.css | absolute_url}}">   
 </head>
 <body class="site">
     <header class="site-header">
