@@ -17,6 +17,9 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
+# Google analytics ID - uncomment and add your GA ID
+# ga: UA-xxxx-yy
+
 # cannonical_domain is used for building the full url to your site including the domain and base_url if any.
 # it is used in the sitemap.xml, robots.txt and in the head of every page as a link rel="canonical" tag.
 # do not include the baser_url if any as it is added in when building the link.
