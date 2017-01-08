@@ -55,11 +55,6 @@ mobile_nav:
   - title: "Notes"
     url: /notes/
 
-# cannonical_domain is a link= relative in the head of every page
-# do not include the baser_url if any as it is added in when building the link.
-# not sure what the canonical setting is for, leave it empty or comment it out and it won't be used. 
-# what is the url google will find the main site at? 
-canonical_domain: http://rdyar.github.io
 
 # Expander footer - this has 3 sections, about, links and contact info.
 # if you don't need the expanded footer info change this to false.
