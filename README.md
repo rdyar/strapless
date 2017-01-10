@@ -38,6 +38,12 @@ Instead of Jekyll Serve, use the Gulp file to build and auto-reload your site. I
 
 To use the Gulp file, at the command prompt just type `gulp`. Thats it - it should start building your site and should auto-reload whenever you save a file.
 
+### Second Config File: _configlocal.yml
+
+The _configlocal.yml file is used with the Gulp file to override any site.baseurl settings so that the assets get served correctly locally. It is only for local development. Jekyll 3.3 does something similar when you run jekyll serve - it drops the baseurl valley and inserts the localhost url.
+
+If you are not using Gulp then you can either delete the _configlocal.yml file or just ignore it, Jekyll will not use it unless you go way out of your way to tell it to.
+
 ### Rake File
 
 There is an included Rake file you can use to minify the CSS, HTML and any JS files. To use it you need to install Rake (probably already there) and another gem called `reduce` you should be able to do this with `gem install reduce`.

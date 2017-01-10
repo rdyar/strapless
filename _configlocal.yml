@@ -1,0 +1,5 @@
+# all this does is override the baseurl for local development so you don't have to change it.
+# this works with the gulp file as it is loads this config file after the main one, and this over rides it.
+# if you are not using gulp, you can ignore this file as it won't be used or do anything - you have to go 
+# out of your way to tell jekyll to use it. 
+baseurl: "" 
