@@ -73,6 +73,19 @@ description: List of elements and their styles
   </div>
   </div>
 </div>
+<div class="row-container">
+  <div class="column-75 ">
+  <div class="gray-box">
+  <p>Its not really 75/25, the right one is always 220px on large screens, 200px on med and then collapses to one column for mobile...</p>
+  </div>
+  </div>
+
+   <div class="column-25 ">
+  <div class="gray-box">
+   <p>Hi, I am a narrower column 200-220px wide.</p>
+  </div>
+  </div>
+</div>
 
 <h1 class="headline">H1 Headline</h1>
 ```<h1 class="headline">H1 Headline</h1>```
